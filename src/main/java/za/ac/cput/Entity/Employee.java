@@ -1,5 +1,10 @@
 package za.ac.cput.Entity;
-
+/*
+    @Description:Employees.java -> Employees class for Employees Entity
+    @Author: Tyronne Lloyd Hendricks
+    @Student Number: 215141210
+    @Date: 3rd June 2021
+  */
 public class Employee {
     private String employeeNumber, name, surname, userType, username, password;
 
