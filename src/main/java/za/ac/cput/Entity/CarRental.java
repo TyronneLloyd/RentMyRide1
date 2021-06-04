@@ -29,27 +29,27 @@ public class CarRental {
             return this;
         }
 
-        public Builder clientID(String clientID){
+        public Builder setClientID(String clientID){
             this.clientID = clientID;
             return this;
         }
 
-        public Builder numberPlate(String numberPlate){
+        public Builder setNumberPlate(String numberPlate){
             this.numberPlate = numberPlate;
             return this;
         }
 
-        public Builder employeeNumber(String employeeNumber){
+        public Builder setEmployeeNumber(String employeeNumber){
             this.employeeNumber = employeeNumber;
             return this;
         }
 
-        public Builder rentalStartDate(String rentalStartDate){
+        public Builder setRentalStartDate(String rentalStartDate){
             this.rentalStartDate = rentalStartDate;
             return this;
         }
 
-        public Builder rentalEndDate(String rentalEndDate){
+        public Builder setRentalEndDate(String rentalEndDate){
             this.rentalEndDate = rentalEndDate;
             return this;
         }
