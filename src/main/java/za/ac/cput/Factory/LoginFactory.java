@@ -1,5 +1,5 @@
 package za.ac.cput.Factory;
-/*L
+/*
     @Description: Login Factory ->
     @Author: Asiphiwe Hanjiwe
     @Student Number: 218336675
@@ -10,9 +10,10 @@ import za.ac.cput.Entity.Login;
 import za.ac.cput.Util.GenericHelper;
 
 public class LoginFactory {
-    public static Login createLogin(String userType,String username)
+    public static Login createLogin(String userType,String password)
     {
-        String password = GenericHelper.generatePassword();
+        String username = GenericHelper.generateId();
+
         Login login = new Login.Builder()
                 .setUserType(userType)
                 .setUsername(username)

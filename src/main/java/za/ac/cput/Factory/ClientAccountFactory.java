@@ -13,7 +13,7 @@ public class ClientAccountFactory
 {
     public  static ClientAccount createClientAccount (String numBorrowed)
     {
-        String accountNum  = GenericHelper.generateAccount_Num();
+        String accountNum  = GenericHelper.generateAccountNumber();
 
         ClientAccount clientAccount = new ClientAccount.Builder()
                 .setAccountNum(accountNum)
