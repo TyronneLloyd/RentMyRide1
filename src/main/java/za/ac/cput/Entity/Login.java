@@ -55,13 +55,14 @@ public class Login {
             this.password = login.password;
             return this;
         }
-        @Override
-        public String toString() {
-            return "Builder{" +
-                    "userType='" + userType + '\'' +
-                    ", username='" + username + '\'' +
-                    ", password='" + password + '\'' +
-                    '}';
-        }
+
+    }
+    @Override
+    public String toString() {
+        return "Builder{" +
+                "userType='" + userType + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }
