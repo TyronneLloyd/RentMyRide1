@@ -44,15 +44,16 @@ public class ClientAccount
             return this;
         }
 
-        @Override
-        public String toString() {
-            return "Builder{" +
-                    "accountNum=" + accountNum +
-                    ", numBorrowed=" + numBorrowed +
-                    '}';
-        }
 
 
+
+    }
+    @Override
+    public String toString() {
+        return "Builder{" +
+                "accountNum=" + accountNum +
+                ", numBorrowed=" + numBorrowed +
+                '}';
     }
 }
 

@@ -9,12 +9,12 @@ import org.junit.jupiter.api.Test;
 import za.ac.cput.Entity.ClientAccount;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-public class ClientAccountTest
+public class ClientAccountFactoryTest
 {
     @Test
     public void createClientAccountTest(){
-        ClientAccount account = ClientAccountFactory.createClientAccount("4");
-        System.out.println(account.getNumBorrowed());
-        assertNotNull(account.getNumBorrowed());
+        ClientAccount account = ClientAccountFactory.createClientAccount("4","012");
+        System.out.println(account);
+        assertNotNull(account);
     }
 }
