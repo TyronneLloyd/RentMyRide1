@@ -12,8 +12,4 @@ public class GenericHelper {
 
         return UUID.randomUUID().toString();
     }
-
-    public static String generateAccountNumber(){
-        return UUID.randomUUID().toString();
-    }
 }
