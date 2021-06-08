@@ -87,4 +87,9 @@ public class Car {
     public boolean Availability_Status(boolean rented) {
         return rented;
     }
+
+    @Override
+    public String toString() {
+        return "CAR INFORMATION: \nNumber Plate: " + numberPlate + "\nColor: " + color + "\nMake: " + make + "\nModel: " + model;
+    }
 }
