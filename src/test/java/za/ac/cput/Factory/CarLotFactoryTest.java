@@ -10,7 +10,7 @@ import za.ac.cput.Entity.CarLot;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class CarLotTest {
+class CarLotFactoryTest {
 
     @Test
     public void createCarLot()
