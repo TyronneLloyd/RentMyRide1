@@ -24,7 +24,6 @@ public class ClientAccountTest
         System.out.println(account);
         assertNotNull(account);
     }
-    @BeforeEach
 
     @Test
     void testEquality()
