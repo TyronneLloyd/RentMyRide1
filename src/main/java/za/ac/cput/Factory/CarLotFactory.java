@@ -12,12 +12,10 @@ import za.ac.cput.Util.GenericHelper;
 
 public class CarLotFactory {
 
-    public static CarLot createCarLot(String numberPLate){
-        String parkingSpace = GenericHelper.generateId();
-
+    public static CarLot createCarLot(String numberPlate, String parkingSpace){
         CarLot carLot = new CarLot.Builder()
                 .setParkingSpace(parkingSpace)
-                .setNumberPlate(numberPLate)
+                .setNumberPlate(numberPlate)
                 .build();
         return carLot;
 
