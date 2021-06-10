@@ -21,13 +21,11 @@ public class LoginTest
     {
         System.out.println(login);
         assertNotNull(login);
-
     }
     @Test
     void testEquality()
     {
         assertEquals("Han@29087",login.getPassword());
-
     }
     @Test
     void testIdentity()
