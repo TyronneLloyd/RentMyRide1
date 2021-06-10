@@ -11,10 +11,8 @@ import za.ac.cput.Util.GenericHelper;
  */
 public class ClientAccountFactory
 {
-    public  static ClientAccount createClientAccount (String numBorrowed)
+    public  static ClientAccount createClientAccount (String numBorrowed, String accountNum)
     {
-        String accountNum  = GenericHelper.generateAccountNumber();
-
         ClientAccount clientAccount = new ClientAccount.Builder()
                 .setAccountNum(accountNum)
                 .setNumBorrowed(numBorrowed).build();

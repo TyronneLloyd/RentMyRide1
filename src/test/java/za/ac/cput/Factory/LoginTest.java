@@ -18,13 +18,9 @@ public class LoginTest
         ClientAccount account = ClientAccountFactory.createClientAccount("4");
 
         Login login = LoginFactory.createLogin("01","Hanjiwe");
-        System.out.println(login.getUserType());
-        System.out.println(login.getUsername());
-        System.out.println(login.getPassword());
 
-        assertNotNull(login.getUserType());
-        assertNotNull(login.getUsername());
-        assertNotNull(login.getPassword());
+        System.out.println(login);
+        assertNotNull(login);
 
     }
 }
