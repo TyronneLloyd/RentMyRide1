@@ -8,7 +8,6 @@ package za.ac.cput.Factory;
  */
 
 import za.ac.cput.Entity.CarLot;
-import za.ac.cput.Util.GenericHelper;
 
 public class CarLotFactory {
 
