@@ -1,6 +1,6 @@
 package za.ac.cput.Factory;
 /*
-    @Description:Employees Entity ->
+    @Description:Employees Factory ->
     @Author: Tyronne Lloyd Hendricks
     @Student Number: 215141210
     @Date: 3rd June 2021
