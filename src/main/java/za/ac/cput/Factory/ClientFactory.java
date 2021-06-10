@@ -20,7 +20,6 @@ public class ClientFactory {
                 .setContactNumber(contactNumber)
                 .setAccountNumber(accountNumber)
                 .build();
-
         return client;
     }
 

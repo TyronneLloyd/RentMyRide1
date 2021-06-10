@@ -50,4 +50,12 @@ public static class Builder {
                 ", numberPlate='" + numberPlate + '\'' +
                 '}';
     }
+
+    public String getParkingSpace() {
+        return parkingSpace;
+    }
+
+    public String getNumberPlate() {
+        return numberPlate;
+    }
 }
