@@ -6,7 +6,6 @@ package za.ac.cput.Factory;
     @Date: 04 June 2021
  */
 import org.junit.jupiter.api.Test;
-import za.ac.cput.Entity.ClientAccount;
 import za.ac.cput.Entity.Login;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
