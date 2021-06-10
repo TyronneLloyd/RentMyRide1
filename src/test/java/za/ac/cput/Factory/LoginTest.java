@@ -26,7 +26,6 @@ public class LoginTest
     @Test
     void testEquality()
     {
-
         assertEquals("Han@29087",login.getPassword());
 
     }
