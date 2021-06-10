@@ -31,12 +31,12 @@ class EmployeeFactoryTest {
         assertNotNull(employee.getPassword());
     }
     @Test
-    public void createEmployeeObjectTest(){
+    public void createEmployeeObjectEqualityTest(){
         Employee employee = EmployeeFactory.createEmployee("Grant","Hendricks", "Sales","215138848","cput3");
         assertEquals("215138848",employee.getUsername());
     }
     @Test
-    public void createEmployeeIdentityTest(){
+    public void createEmployeeObjectIdentityTest(){
         Employee employee = EmployeeFactory.createEmployee("Elrich","Herman", "Sales","218150040","cput4");
         assertSame("Elrich",employee.getName());
     }
