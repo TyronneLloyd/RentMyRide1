@@ -43,16 +43,13 @@ public class ClientAccount
             this.numBorrowed = clientAccount.numBorrowed;
             return this;
         }
-
-        @Override
-        public String toString() {
-            return "Builder{" +
-                    "accountNum=" + accountNum +
-                    ", numBorrowed=" + numBorrowed +
-                    '}';
-        }
-
-
+    }
+    @Override
+    public String toString() {
+        return "Builder{" +
+                "accountNum=" + accountNum +
+                ", numBorrowed=" + numBorrowed +
+                '}';
     }
 }
 

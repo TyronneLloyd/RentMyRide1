@@ -15,10 +15,8 @@ public class LoginTest
     @Test
     public void createLoginTest()
     {
-        ClientAccount account = ClientAccountFactory.createClientAccount("4");
-
+       // ClientAccount account = ClientAccountFactory.createClientAccount("4","098");
         Login login = LoginFactory.createLogin("01","Hanjiwe");
-
         System.out.println(login);
         assertNotNull(login);
 
