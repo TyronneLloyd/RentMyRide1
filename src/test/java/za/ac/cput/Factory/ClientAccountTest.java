@@ -13,7 +13,7 @@ public class ClientAccountTest
 {
     @Test
     public void createClientAccountTest(){
-        ClientAccount account = ClientAccountFactory.createClientAccount("4");
+        ClientAccount account = ClientAccountFactory.createClientAccount("4","0325");
         System.out.println(account.getNumBorrowed());
         assertNotNull(account.getNumBorrowed());
     }

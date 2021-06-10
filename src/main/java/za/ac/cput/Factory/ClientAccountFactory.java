@@ -16,7 +16,6 @@ public class ClientAccountFactory
         ClientAccount clientAccount = new ClientAccount.Builder()
                 .setAccountNum(accountNum)
                 .setNumBorrowed(numBorrowed).build();
-
         return clientAccount;
     }
 
