@@ -5,6 +5,7 @@ package za.ac.cput.Factory;
     @Student Number: 218336675
     @Date: 04 June 2021
  */
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import za.ac.cput.Entity.ClientAccount;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -17,4 +18,6 @@ public class ClientAccountTest
         System.out.println(account);
         assertNotNull(account);
     }
+
+
 }
