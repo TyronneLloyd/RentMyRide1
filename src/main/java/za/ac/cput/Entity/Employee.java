@@ -28,6 +28,24 @@ public class Employee {
                 ", password='" + password + '\'' +
                 '}';
     }
+    public String getEmployeeNumber() {
+        return employeeNumber;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getSurname() {
+        return surname;
+    }
+    public String getUserType() {
+        return userType;
+    }
+    public String getUsername() {
+        return username;
+    }
+    public String getPassword() {
+        return password;
+    }
 
     public static class Builder{
         private String employeeNumber, name, surname, userType, username, password;
