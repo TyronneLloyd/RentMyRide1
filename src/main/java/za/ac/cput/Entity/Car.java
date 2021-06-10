@@ -84,7 +84,31 @@ public class Car {
         }
     }
 
-    public boolean Availability_Status(boolean rented) {
+    public String getNumberPlate() {
+        return numberPlate;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public double getRentalPrice() {
+        return rentalPrice;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public boolean availabilityStatus() {
         return rented;
     }
 
