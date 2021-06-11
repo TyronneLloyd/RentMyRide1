@@ -1,4 +1,4 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 /*
     @Description:Employees Factory ->
     @Author: Tyronne Lloyd Hendricks
@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-import za.ac.cput.Entity.Employee;
+import za.ac.cput.entity.Employee;
 
 class EmployeeFactoryTest {
     @Test

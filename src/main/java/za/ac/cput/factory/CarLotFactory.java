@@ -1,4 +1,4 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 
 /*
    @Description:CarLotFactory.java
@@ -7,8 +7,7 @@ package za.ac.cput.Factory;
    @Date: 4 June 2021
  */
 
-import za.ac.cput.Entity.CarLot;
-import za.ac.cput.Util.GenericHelper;
+import za.ac.cput.entity.CarLot;
 
 public class CarLotFactory {
 

@@ -1,4 +1,4 @@
-package za.ac.cput.Entity;
+package za.ac.cput.entity;
 
 /*
     @Description: CarRental.java -> Car Rental class facilitates the renting of cars and records them

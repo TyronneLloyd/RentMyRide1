@@ -1,6 +1,6 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 /*
-    @Description: TDD for Login Entity ->
+    @Description: TDD for ClientAccount Entity ->
     @Author: Asiphiwe Hanjiwe
     @Student Number: 218336675
     @Date: 04 June 2021
@@ -8,36 +8,38 @@ package za.ac.cput.Factory;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-import za.ac.cput.Entity.ClientAccount;
-import za.ac.cput.Entity.Login;
+import za.ac.cput.entity.ClientAccount;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class LoginFactoryTest
+public class ClientAccountFactoryTest
 {
-    Login login = LoginFactory.createLogin("01","Han@29087","Asiphiwe");
+    ClientAccount account = ClientAccountFactory.createClientAccount("4","0325");
     @Test
-    public void createLoginTest()
-    {
-        System.out.println(login);
-        assertNotNull(login);
+    public void createClientAccountTest(){
+
+        System.out.println(account);
+        assertNotNull(account);
     }
+
     @Test
     void testEquality()
     {
-        assertEquals("Han@29087",login.getPassword());
+
+        assertEquals("0325",account.getAccountNum());
+
     }
     @Test
     void testIdentity()
     {
-        assertSame("Asiphiwe",login.getUsername());
+        assertSame("4",account.getNumBorrowed());
     }
-
     @Test
     @Disabled
     void  createClientAccountDisable()
     {
-        assertNotNull(login);
+        System.out.println(account);
+        assertNotNull(account);
     }
 
     @Test
@@ -48,4 +50,3 @@ public class LoginFactoryTest
         System.out.println("Time up for test");
     }
 }
-

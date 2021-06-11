@@ -1,4 +1,4 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 
 /*
     @Description: CarRentalFactory.java
@@ -7,8 +7,8 @@ package za.ac.cput.Factory;
     @Date: 3 June 2021
   */
 
-import za.ac.cput.Entity.CarRental;
-import za.ac.cput.Util.GenericHelper;
+import za.ac.cput.entity.CarRental;
+import za.ac.cput.util.GenericHelper;
 
 public class CarRentalFactory {
     public static CarRental createCarRental(String clientID, String numberPlate, String employeeNumber, String rentalStartDate, String rentalEndDate){

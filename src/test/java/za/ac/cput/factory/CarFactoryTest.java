@@ -1,15 +1,14 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 /* CarFactoryTest.java
    Test class for Car Factory
    Author: Rick Allen Herbert (219014337)
    Date: 08 June 2021
 */
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-import za.ac.cput.Entity.Car;
+import za.ac.cput.entity.Car;
 
 import static org.junit.jupiter.api.Assertions.*;
 
