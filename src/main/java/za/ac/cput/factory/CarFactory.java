@@ -1,6 +1,6 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 
-import za.ac.cput.Entity.Car;
+import za.ac.cput.entity.Car;
 
 /* Car.java
    Entity for the Car

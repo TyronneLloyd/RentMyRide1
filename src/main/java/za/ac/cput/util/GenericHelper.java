@@ -1,4 +1,4 @@
-package za.ac.cput.Util;
+package za.ac.cput.util;
 /*
     @Description:Employees Entity ->
     @Author: Tyronne Lloyd Hendricks

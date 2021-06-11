@@ -1,4 +1,4 @@
-package za.ac.cput.Entity;
+package za.ac.cput.entity;
 /* Car.java
    Entity for the Car
    Author: Rick Allen Herbert (219014337)

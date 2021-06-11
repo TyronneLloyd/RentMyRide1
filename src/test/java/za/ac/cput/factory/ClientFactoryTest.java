@@ -1,4 +1,4 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 
 /*
    @Description:ClientFactoryTest.java
@@ -10,7 +10,7 @@ package za.ac.cput.Factory;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-import za.ac.cput.Entity.Client;
+import za.ac.cput.entity.Client;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ClientFactoryTest {
