@@ -1,8 +1,12 @@
 package za.ac.cput.repository.employee.impl;
-
+/*
+    @Description:Repository ->
+    @Author: Tyronne Lloyd Hendricks
+    @Student Number: 215141210
+    @Date: 19 July 2021
+*/
 import za.ac.cput.entity.Employee;
 import za.ac.cput.repository.employee.IEmployeeRepository;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -61,7 +65,6 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public Set<Employee> getAll() {
-
         return null;
     }
 }

@@ -78,7 +78,7 @@ public class Employee {
              return new Employee(this);
         }
 
-        private Builder copy(Employee employee){
+        public Builder copy(Employee employee){
             this.employeeNumber = employee.employeeNumber;
             this.name = employee.name;
             this.surname = employee.surname;
