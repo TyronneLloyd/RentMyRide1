@@ -13,10 +13,10 @@ import java.util.Set;
 public class EmployeeRepository implements IEmployeeRepository {
 
     private static EmployeeRepository repository = null;
-    private Set<Employee> employeeSet = null;
+    private Set<Employee> employeeDS = null;
 
     private EmployeeRepository(){
-        employeeSet = new HashSet<Employee>();
+        employeeDS = new HashSet<Employee>();
     }
 
     public static EmployeeRepository getRepository(){
@@ -28,7 +28,7 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public Employee create(Employee employee) {
-        boolean success = employeeSet.add(employee);
+        boolean success = employeeDS.add(employee);
         if(!success)
             return null;
         return employee;
@@ -36,7 +36,7 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public Employee read(String employeeId) {
-        for (Employee e: employeeSet)
+        for (Employee e: employeeDS)
             if(e.getEmployeeNumber().equalsIgnoreCase(employeeId)){
                 return e;
             }
@@ -47,8 +47,8 @@ public class EmployeeRepository implements IEmployeeRepository {
     public Employee update(Employee employee) {
         Employee oldEmployee = read(employee.getEmployeeNumber());
         if(oldEmployee != null){
-            employeeSet.remove(oldEmployee);
-            employeeSet.add(employee);
+            employeeDS.remove(oldEmployee);
+            employeeDS.add(employee);
             return employee;
         }
         return null;
@@ -59,12 +59,12 @@ public class EmployeeRepository implements IEmployeeRepository {
         Employee employeeRemoved = read(employeeId);
         if(employeeRemoved == null)
             return false;
-        employeeSet.remove(employeeRemoved);
+        employeeDS.remove(employeeRemoved);
         return true ;
     }
 
     @Override
     public Set<Employee> getAll() {
-        return null;
+        return employeeDS;
     }
 }
