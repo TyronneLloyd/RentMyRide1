@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CarLotRepositoryTest
 {
     private static CarLotRepository repository = CarLotRepository.getRepository();
-    private static CarLot carLot = CarLotFactory.createCarLot("84D546Y4","54HH");
+    private static CarLot carLot = CarLotFactory.createCarLot("84D546Y4","54HHH");
 
     @Test
     @Order(1)
