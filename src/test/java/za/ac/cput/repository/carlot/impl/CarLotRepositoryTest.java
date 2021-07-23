@@ -1,7 +1,7 @@
 package za.ac.cput.repository.carlot.impl;
 
 /*
-   @Description:CarLot.java
+   @Description:CarLotRepositoryTest.java
    @Author: Elrich Herman
    @Student Number: 218150040
    @Date: 22 July 2021
