@@ -7,7 +7,10 @@ package za.ac.cput.repository.carlot.impl;
    @Date: 22 July 2021
  */
 
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 import za.ac.cput.entity.CarLot;
 import za.ac.cput.factory.CarLotFactory;
 import static org.junit.jupiter.api.Assertions.*;
