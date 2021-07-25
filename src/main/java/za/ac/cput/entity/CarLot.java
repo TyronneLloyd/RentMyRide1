@@ -11,11 +11,10 @@ public class CarLot {
 
     private String parkingSpace, numberPlate;
 
-private CarLot(Builder builder){
-
+private CarLot(Builder builder)
+{
     this.parkingSpace = builder.parkingSpace;
     this.numberPlate = builder.numberPlate;
-
 }
 
 public static class Builder {
@@ -35,7 +34,7 @@ public static class Builder {
         return new CarLot(this);
     }
 
-    private CarLot.Builder copy(CarLot carLot) {
+    public CarLot.Builder copy(CarLot carLot) {
         this.parkingSpace = carLot.parkingSpace;
         this.numberPlate = carLot.numberPlate;
         return this;
