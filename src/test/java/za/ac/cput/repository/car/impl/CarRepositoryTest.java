@@ -52,7 +52,7 @@ public class CarRepositoryTest {
     void d_deleteCar()
     {
         boolean success = repository.delete(car.getNumberPlate());
-        assertTrue (success);
+        assertTrue(success);
         System.out.println("Delete:" + success);
     }
 
