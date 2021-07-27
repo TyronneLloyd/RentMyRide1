@@ -1,18 +1,15 @@
 package za.ac.cput.repository.clientAccount;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.*;
 import za.ac.cput.entity.ClientAccount;
 import za.ac.cput.factory.ClientAccountFactory;
 import za.ac.cput.repository.clientAccount.impl.ClientAccountRepository;
-
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class ClientAccountRepositoryTest {
     private static ClientAccountRepository repo = ClientAccountRepository.getRepository();
-private static ClientAccount clientAccount = ClientAccountFactory.createClientAccount("5","512715");
+    private static ClientAccount clientAccount = ClientAccountFactory.createClientAccount("5","512715");
 
     @Test
     @Order(1)
@@ -32,19 +29,20 @@ private static ClientAccount clientAccount = ClientAccountFactory.createClientAc
     @Test
     @Order(3)
     void update() {
-        ClientAccount updated = new ClientAccount.Builder().copy(clientAccount).setAccountNum("5127155687").setNumBorrowed("52").build();
-        assertNotNull(repo.update(updated));
+        ClientAccount updated = new ClientAccount.Builder().copy(clientAccount).setNumBorrowed("52").build();
+
         System.out.println("Updated: " + updated);
+        assertNotNull(repo.update(updated));
     }
     @Test
-    @Order(4)
+    @Order(5)
     void getAll() {
         System.out.println("Display All: ");
         System.out.println(repo.getAll());
 
     }
     @Test
-    @Order(5)
+    @Order(4)
     void delete() {
         boolean delete = repo.delete(clientAccount.getAccountNum());
         assertTrue(delete);

@@ -50,7 +50,7 @@ public class ClientAccount
     }
     @Override
     public String toString() {
-        return "Builder{" +
+        return "Client Account" +
                 "accountNum=" + accountNum +
                 ", numBorrowed=" + numBorrowed +
                 '}';

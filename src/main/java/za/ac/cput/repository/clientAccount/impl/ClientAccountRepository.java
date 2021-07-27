@@ -31,7 +31,6 @@ public class ClientAccountRepository implements IClientAccountRepository {
         return repository;
     }
 
-
     @Override
     public ClientAccount create(ClientAccount newAccount) {
             boolean success = clientAccountDB.add(newAccount);
@@ -44,13 +43,10 @@ public class ClientAccountRepository implements IClientAccountRepository {
     public ClientAccount read(String accountID) {
 
         for (ClientAccount acc: clientAccountDB)
-        {
-            if (acc.getAccountNum().equalsIgnoreCase(accountID))
+            if (acc.getAccountNum().equals(accountID))
             {
-
                 return acc;
             }
-        }
         return null;
     }
 
