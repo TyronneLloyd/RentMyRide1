@@ -1,4 +1,4 @@
-package za.ac.cput.repository.carRental.impl;
+package za.ac.cput.repository.carRental;
 /*
     @Author: Grant Hendricks
     @Student Number: 215138848

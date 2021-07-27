@@ -1,4 +1,4 @@
-package za.ac.cput.repository.employee.impl;
+package za.ac.cput.repository.employee;
 /*
     @Description:Repository ->
     @Author: Tyronne Lloyd Hendricks

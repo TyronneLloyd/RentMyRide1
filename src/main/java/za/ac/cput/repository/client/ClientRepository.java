@@ -1,4 +1,4 @@
-package za.ac.cput.repository.client.impl;
+package za.ac.cput.repository.client;
 
 /*
     @Description:ClientRepository ->
@@ -8,7 +8,7 @@ package za.ac.cput.repository.client.impl;
 */
 
 import za.ac.cput.entity.Client;
-import za.ac.cput.repository.client.IClientRepository;
+
 import java.util.HashSet;
 import java.util.Set;
 

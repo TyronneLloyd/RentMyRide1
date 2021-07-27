@@ -1,4 +1,4 @@
-package za.ac.cput.repository.carRental.impl;
+package za.ac.cput.repository.carRental;
 /*
     @Author: Grant Hendricks
     @Student Number: 215138848
@@ -6,7 +6,7 @@ package za.ac.cput.repository.carRental.impl;
   */
 
 import za.ac.cput.entity.CarRental;
-import za.ac.cput.repository.carRental.ICarRentalRepository;
+
 import java.util.HashSet;
 import java.util.Set;
 

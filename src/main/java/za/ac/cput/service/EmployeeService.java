@@ -7,7 +7,7 @@ package za.ac.cput.service;
 */
 
 import za.ac.cput.entity.Employee;
-import za.ac.cput.repository.employee.impl.EmployeeRepository;
+import za.ac.cput.repository.employee.EmployeeRepository;
 import za.ac.cput.service.employee.IEmployeeService;
 
 import java.util.Set;

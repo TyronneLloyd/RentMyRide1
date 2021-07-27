@@ -3,7 +3,7 @@
    Author: Rick Allen Herbert (219014337)
    Date: 24 July 2021
 */
-package za.ac.cput.repository.car.impl;
+package za.ac.cput.repository.car;
 
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;

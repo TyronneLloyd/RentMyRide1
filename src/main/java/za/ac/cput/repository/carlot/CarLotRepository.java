@@ -1,4 +1,4 @@
-package za.ac.cput.repository.carlot.impl;
+package za.ac.cput.repository.carlot;
 
 /*
    @Description:CarLotRepository.java
@@ -8,7 +8,7 @@ package za.ac.cput.repository.carlot.impl;
  */
 
 import za.ac.cput.entity.CarLot;
-import za.ac.cput.repository.carlot.ICarLotRepository;
+
 import java.util.*;
 
 public class CarLotRepository implements ICarLotRepository {

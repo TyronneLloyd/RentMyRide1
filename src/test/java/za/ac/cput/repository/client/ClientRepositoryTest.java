@@ -1,4 +1,4 @@
-package za.ac.cput.repository.client.impl;
+package za.ac.cput.repository.client;
 
 /*
     @Description:ClientRepositoryTest ->

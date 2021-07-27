@@ -1,4 +1,4 @@
-package za.ac.cput.repository.carlot.impl;
+package za.ac.cput.repository.carlot;
 
 /*
    @Description:CarLotRepositoryTest.java
