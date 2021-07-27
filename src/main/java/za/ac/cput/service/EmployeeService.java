@@ -1,4 +1,4 @@
-package za.ac.cput.service.employee.impl;
+package za.ac.cput.service;
 /*
     @Description:Repository ->
     @Author: Tyronne Lloyd Hendricks
@@ -18,7 +18,7 @@ public class EmployeeService implements IEmployeeService{
 
     private EmployeeService(){this.repository = EmployeeRepository.getRepository();}
 
-    private static EmployeeService getService(){
+    public static EmployeeService getService(){
         if(service == null){
             service = new EmployeeService();
         }
