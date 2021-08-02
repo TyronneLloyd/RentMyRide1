@@ -1,4 +1,4 @@
-package za.ac.cput.service.client;
+package za.ac.cput.service;
 
 /*
     @Description:CllientService
@@ -9,10 +9,10 @@ package za.ac.cput.service.client;
 
 import za.ac.cput.entity.Client;
 import za.ac.cput.repository.client.ClientRepository;
-
+import za.ac.cput.service.client.IClientService;
 import java.util.Set;
 
-public class ClientService implements IClientService{
+public class ClientService implements IClientService {
     private static  ClientService service = null;
     private ClientRepository repository = null;
 

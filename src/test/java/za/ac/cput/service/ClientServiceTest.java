@@ -1,4 +1,4 @@
-package za.ac.cput.service.client;
+package za.ac.cput.service;
 
 /*
     @Description:ClientServiceTest ->
@@ -12,7 +12,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import za.ac.cput.entity.Client;
 import za.ac.cput.factory.ClientFactory;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
