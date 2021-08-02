@@ -27,23 +27,23 @@ public class CarRentalService implements ICarRentalService {
     }
 
     @Override
-    public CarRental create(CarRental t) {
-        return this.repository.create(t);
+    public CarRental create(CarRental createRental) {
+        return this.repository.create(createRental);
     }
 
     @Override
-    public CarRental read(String s) {
-        return this.repository.read(s);
+    public CarRental read(String readRental) {
+        return this.repository.read(readRental);
     }
 
     @Override
-    public CarRental update(CarRental t) {
-        return this.repository.update(t);
+    public CarRental update(CarRental upRental) {
+        return this.repository.update(upRental);
     }
 
     @Override
-    public boolean delete(String s) {
-        return this.repository.delete(s);
+    public boolean delete(String delRental) {
+        return this.repository.delete(delRental);
     }
 
     @Override

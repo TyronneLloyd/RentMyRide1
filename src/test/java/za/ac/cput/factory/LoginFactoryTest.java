@@ -1,4 +1,4 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 /*
     @Description: TDD for Login Entity ->
     @Author: Asiphiwe Hanjiwe
@@ -6,8 +6,10 @@ package za.ac.cput.Factory;
     @Date: 04 June 2021
  */
 import org.junit.jupiter.api.Test;
-import za.ac.cput.Entity.ClientAccount;
-import za.ac.cput.Entity.Login;
+import za.ac.cput.entity.ClientAccount;
+import za.ac.cput.entity.Login;
+import za.ac.cput.factory.LoginFactory;
+
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class LoginFactoryTest

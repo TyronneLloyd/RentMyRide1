@@ -1,7 +1,7 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 
-import za.ac.cput.Entity.ClientAccount;
-import za.ac.cput.Util.GenericHelper;
+import za.ac.cput.entity.ClientAccount;
+import za.ac.cput.util.GenericHelper;
 /*
     @Description: ClientAccount Factory ->
     @Author: Asiphiwe Hanjiwe
