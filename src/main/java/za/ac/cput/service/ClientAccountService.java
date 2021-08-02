@@ -1,0 +1,53 @@
+package za.ac.cput.service;
+
+import za.ac.cput.entity.ClientAccount;
+import za.ac.cput.repository.clientAccount.impl.ClientAccountRepository;
+import za.ac.cput.service.clientAccount.IClientAccountService;
+import java.util.Set;
+/*
+    @Description: Client Account Service ->
+    @Author: Asiphiwe Hanjiwe
+    @Student Number: 218336675
+    @Date: 30 July 2021
+ */
+public class ClientAccountService implements IClientAccountService
+{
+    private static ClientAccountService service = null;
+    private ClientAccountRepository repo = null;
+
+    private ClientAccountService() {
+        this.repo = ClientAccountRepository.getRepository();
+    }
+
+    public static ClientAccountService getService(){
+        if(service == null){
+            service = new ClientAccountService();
+        }
+        return service;
+    }
+
+    @Override
+    public ClientAccount create(ClientAccount account) {
+        return this.repo.create(account);
+    }
+
+    @Override
+    public ClientAccount read(String accountID) {
+        return this.repo.read(accountID);
+    }
+
+    @Override
+    public ClientAccount update(ClientAccount account) {
+        return this.repo.update(account);
+    }
+
+    @Override
+    public boolean delete(String accountID) {
+        return this.repo.delete(accountID);
+    }
+
+    @Override
+    public Set<ClientAccount> getAll() {
+        return this.repo.getAll();
+    }
+}
