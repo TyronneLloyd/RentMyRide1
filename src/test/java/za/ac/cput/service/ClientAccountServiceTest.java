@@ -5,12 +5,14 @@ package za.ac.cput.service;
     @Student Number: 218336675
     @Date: 30 July 2021
  */
+import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 import za.ac.cput.entity.ClientAccount;
 import za.ac.cput.factory.ClientAccountFactory;
 import static org.junit.jupiter.api.Assertions.*;
-
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class ClientAccountServiceTest {
     private static ClientAccountService service  = ClientAccountService.getService();
     private static ClientAccount account = ClientAccountFactory.createClientAccount("35","51237");
@@ -36,7 +38,7 @@ class ClientAccountServiceTest {
     @Test
     @Order(3)
     void update() {
-        ClientAccount update = new ClientAccount.Builder().copy(account).setAccountNum("5123789703").setNumBorrowed("45").build();
+        ClientAccount update = new ClientAccount.Builder().copy(account).setNumBorrowed("45").build();
         assertNotNull(service.update(update));
         System.out.println("Updated: " + update);
         System.out.println(" ");

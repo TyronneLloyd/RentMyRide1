@@ -1,7 +1,9 @@
 package za.ac.cput.service;
 
+import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 import za.ac.cput.entity.Login;
 import za.ac.cput.factory.LoginFactory;
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
     @Student Number: 218336675
     @Date: 30 July 2021
  */
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
 class LoginServiceTest {
     private static LoginService service = LoginService.getService();
@@ -37,7 +40,7 @@ class LoginServiceTest {
     @Test
     @Order(3)
     void update() {
-      Login update = new Login.Builder().copy(loginaccount).setUsername("").setUserType("").build();
+      Login update = new Login.Builder().copy(loginaccount).setUserType("Admin").build();
         assertNotNull(service.update(update));
         System.out.println("Updated: " + update);
         System.out.println(" ");
