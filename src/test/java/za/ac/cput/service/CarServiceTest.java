@@ -51,17 +51,19 @@ class CarServiceTest {
     }
 
     @Test
-    void d_delete() {
+    void d_getAllCar() {
+        System.out.println("Display All Cars: ");
+        System.out.println(service.getAll());
+        System.out.println(" ");
+    }
+
+    @Test
+    void e_delete() {
         boolean success = service.delete(car.getNumberPlate());
         assertTrue(success);
         System.out.println("Delete:" + success);
     }
 
-    @Test
-    void e_getAllCar() {
-        System.out.println("Display All Cars: ");
-        System.out.println(service.getAll());
-        System.out.println(" ");
-    }
+
 
 }
