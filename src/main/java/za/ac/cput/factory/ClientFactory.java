@@ -11,10 +11,11 @@ import za.ac.cput.entity.Client;
 import za.ac.cput.util.GenericHelper;
 
 public class ClientFactory {
-    public static Client createClient(String name, String surname, String contactNumber,String accountNumber) {
-        String clientID = GenericHelper.generateId();
+    public static Client createClient(String name, String surname, String contactNumber, String accountNumber) {
+        String clientId = GenericHelper.generateId();
+
         Client client = new Client.Builder()
-                .setClientID(clientID)
+                .setClientID(clientId)
                 .setName(name)
                 .setSurname(surname)
                 .setContactNumber(contactNumber)
