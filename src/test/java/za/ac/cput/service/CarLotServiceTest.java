@@ -56,6 +56,7 @@ class CarLotServiceTest {
         boolean success = service.delete(carLot.getNumberPlate());
         assertTrue(success);
         System.out.println("Deleted: " + success);
+
     }
 
 }
