@@ -57,4 +57,6 @@ public static class Builder {
     public String getNumberPlate() {
         return numberPlate;
     }
+
+
 }
