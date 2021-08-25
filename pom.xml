@@ -31,9 +31,7 @@
         <artifactId>spring-boot-starter-web</artifactId>
       </dependency>
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
+
     
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -44,18 +42,14 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-=======
->>>>>>> Stashed changes
+
       <dependency>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-test</artifactId>
           <version>2.5.0</version>
           <scope>test</scope>
       </dependency>
-<<<<<<< Updated upstream
-=======
->>>>>>> main
->>>>>>> Stashed changes
+
   </dependencies>
 
   <build>
