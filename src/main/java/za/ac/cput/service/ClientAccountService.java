@@ -1,5 +1,6 @@
 package za.ac.cput.service;
 
+import org.springframework.stereotype.Service;
 import za.ac.cput.entity.ClientAccount;
 import za.ac.cput.repository.clientAccount.impl.ClientAccountRepository;
 import za.ac.cput.service.clientAccount.IClientAccountService;
@@ -10,6 +11,7 @@ import java.util.Set;
     @Student Number: 218336675
     @Date: 30 July 2021
  */
+@Service
 public class ClientAccountService implements IClientAccountService
 {
     private static ClientAccountService service = null;
