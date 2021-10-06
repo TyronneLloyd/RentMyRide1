@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController{
-  @GetMapping("/")
+  @RequestMapping({"/","/home"})
     public String index() {
         return "Welcome to RentMyRide online shop";
     }
@@ -15,4 +15,4 @@ public class HomeController{
 }
 
   
-}
+
