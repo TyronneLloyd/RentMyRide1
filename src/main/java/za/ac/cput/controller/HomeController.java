@@ -1,6 +1,5 @@
 package za.ac.cput.controller;
 
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +11,8 @@ public class HomeController{
     public String index() {
         return "Welcome to RentMyRide online shop";
     }
+
 }
 
-
   
+

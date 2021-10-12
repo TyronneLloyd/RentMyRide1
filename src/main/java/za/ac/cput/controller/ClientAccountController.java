@@ -1,6 +1,8 @@
 package za.ac.cput.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;
 import za.ac.cput.entity.ClientAccount;
 import za.ac.cput.factory.ClientAccountFactory;
@@ -8,9 +10,11 @@ import za.ac.cput.service.ClientAccountService;
 
 import java.util.Set;
 @RestController
-@RequestMapping ("/client account")
+@RequestMapping ("/client")
+
 
 public class ClientAccountController {
+
     @Autowired
     private ClientAccountService service;
 
